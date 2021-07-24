@@ -1,0 +1,32 @@
+{
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "modules": false
+        }
+      ]
+    ],
+    "plugins": [
+      "@babel/plugin-transform-runtime",
+      [
+        "@babel/plugin-proposal-decorators",
+        {
+          "legacy": true
+        }
+      ],
+      "@babel/plugin-syntax-dynamic-import",
+      "@babel/plugin-proposal-class-properties"
+      //如果要从esm生成CommonJS标准的文件可以打开这个
+      //,"@babel/plugin-transform-modules-commonjs"
+      //如果要从esm生成umd,打开下边这个
+      //,"@babel/plugin-transform-modules-umd"
+    ],
+    "env": {
+      "test": {
+        "plugins": [
+          "@babel/plugin-transform-modules-commonjs"
+        ]
+      }
+    }
+  }

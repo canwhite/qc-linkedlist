@@ -1,0 +1,32 @@
+{
+  "name": "qc-linkedlist",
+  "version": "1.0.0",
+  "description": "linkedlist",
+  "main": "umd/index.js",
+  "module": "esm/index.js",
+  "scripts": {
+    "babel-esm": "babel src --out-dir esm",
+    "babel-cmj": "babel src --out-dir cmj",
+    "babel-umd":"babel src --out-dir umd"
+  },
+  "keywords": [],
+  "author": "qiaochao",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "*",
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-proposal-class-properties": "^7.2.1",
+    "@babel/plugin-proposal-decorators": "^7.2.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.4.0",
+    "@babel/plugin-transform-modules-umd": "^7.14.5",
+    "@babel/plugin-transform-runtime": "^7.4.0",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/runtime": "^7.4.3"
+  },
+  "browserslist": [
+    "> 1%",
+    "Chrome 45",
+    "IE 11"
+  ]
+}
