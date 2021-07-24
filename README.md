@@ -21,7 +21,7 @@ console.log(JSON.stringify(obj));//输出
 
 console.log("val",obj.getValByIndex(2));//通过index得到值
 console.log("index",obj.getIndexByVal(5)) //通过val得到index
-console.log("delete",obj.deleteAtIndex(2))//删除,return 0成功,return 1失败
+console.log("delete",obj.deleteAtIndex(2))//删除,return 0成功,return -1失败
 obj.addAtIndex(2,9);//在index等于2处插入9
 console.log(JSON.stringify(obj));
 ```
